@@ -117,7 +117,7 @@ local function spawnVehicle()
     TaskWarpPedIntoVehicle(ped, vehicle, -1)
     TriggerEvent("vehiclekeys:client:SetOwner", vehiclePlate) -- This is so it doesnt show "you dont have keys"
     SetVehicleFuelLevel(vehicle, 100.0)
-    exports["LegacyFuel"]:SetFuel(vehicle, 100) -- so it doesnt beep low fuel
+    exports["qs-fuelstations"]:SetFuel(vehicle, 100) -- so it doesnt beep low fuel
     SetVehicleRadioEnabled(vehicle, false)
     SetVehicleEngineOn(vehicle, false, true, true)
     SetModelAsNoLongerNeeded(hash)
